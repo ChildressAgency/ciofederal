@@ -5,3 +5,26 @@
   Version: 1.0
 */
 
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=cbff4462-d888-46dd-89ab-6c50d3d9528d");
+@font-face{
+  font-family:"Automate W00_n4";
+    src:url("Fonts/6a8bfe2c-361a-44aa-a192-9457b86acdb3.eot?#iefix") format("eot")
+  }
+@font-face{
+  font-family:"Automate";
+  src:url("Fonts/6a8bfe2c-361a-44aa-a192-9457b86acdb3.eot?#iefix");
+  src:url("Fonts/6a8bfe2c-361a-44aa-a192-9457b86acdb3.eot?#iefix") format("eot"),url("Fonts/0fe86a6f-405e-45e6-b350-8d4bb6242a3c.woff2") format("woff2"),url("Fonts/24698e98-2251-4c38-925e-1b51538458f5.woff") format("woff"),url("Fonts/bd443f82-7c2f-4390-a2e6-89834cb771de.ttf") format("truetype"),url("Fonts/b14c6cc6-ddb5-4421-838a-ae2f684b615c.svg#b14c6cc6-ddb5-4421-838a-ae2f684b615c") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face{
+  font-family:"Automate W00_n7";
+  src:url("Fonts/573eb4e8-5374-4a97-acbb-1fa0d9430467.eot?#iefix") format("eot")
+}
+@font-face{
+  font-family:"Automate";
+  src:url("Fonts/573eb4e8-5374-4a97-acbb-1fa0d9430467.eot?#iefix");
+  src:url("Fonts/573eb4e8-5374-4a97-acbb-1fa0d9430467.eot?#iefix") format("eot"),url("Fonts/e40b5f80-fa18-4b98-8ca2-5ae3aedc35b0.woff2") format("woff2"),url("Fonts/e0f2f16e-a20e-4991-98e5-cb04ce8f97bb.woff") format("woff"),url("Fonts/ba7c1392-ae96-4114-b779-bcf73e6a3e1d.ttf") format("truetype"),url("Fonts/5eaa13bb-dd75-4f3a-98d3-b8fd71dfd8ff.svg#5eaa13bb-dd75-4f3a-98d3-b8fd71dfd8ff") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
