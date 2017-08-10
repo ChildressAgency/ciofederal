@@ -28,3 +28,74 @@
   font-weight: 700;
   font-style: normal;
 }
+
+body{
+  font-family:"News Cycle", sans-serif;
+}
+
+#header-nav{
+  background-color:#092c74;
+  padding-top:10px;
+  padding-bottom:10px;
+  box-shadow:0px 0px 10px #000;
+  position:relative;
+  z-index:9999;
+}
+.header-logo{
+  display:inline-block;
+  vertical-align:middle;
+}
+.header-logo+.header-logo{
+  margin-left:30px;
+}
+.navbar-nav>li>a{
+  font-family:Automate, sans-serif;
+  color:#fff;
+}
+.navbar-nav>li.active>a,
+.navbar-nav>li>a:hover,
+.navbar-nav>li>a:focus{
+  background:transparent;
+  color:#f56600;
+}
+.navbar-nav>li>a.header-social{
+  color:#f56600;
+  font-size:26px;
+  padding-top:10px;
+}
+.navbar-nav>li>a.header-social:hover,
+.navbar-nav>li>a.header-social:focus{
+  color:#fff;
+}
+
+.carousel-fade .carousel-inner .item{
+  -webkit-transition-property:opacity;
+  transition-property:opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right{
+  opacity:0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right{
+  opacity:1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right{
+  left:0;
+  -webkit-transform:translate3d(0, 0, 0);
+  transform:translate3d(0, 0, 0);
+}
+#sectionCarousel.carousel,
+#sectionCarousel .carousel-inner,
+#sectionCarousel .carousel-inner .item{
+  height:100%;
+}
+#sectionCarousel .carousel-inner .item{
+  background-repeat:no-repeat;
+  background-size:cover;
+}
