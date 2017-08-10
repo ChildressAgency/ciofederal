@@ -1,8 +1,9 @@
 jQuery(document).ready(function($){
   if(typeof $.fn.fullpage == 'function'){
     $('#hp-main').fullpage({
-      responsiveHeight:600,
+      responsiveHeight:700,
       verticalCentered:false,
+      //scrollOverflow:true,
       slideSelector:'.fullpage-slide',
       afterRender: function(){
         $('#sectionCarousel.carousel').carousel();

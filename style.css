@@ -104,6 +104,7 @@ body{
 .carousel-fade .carousel-inner .item{
   -webkit-transition-property:opacity;
   transition-property:opacity;
+  min-height:780px;
 }
 .carousel-fade .carousel-inner .item,
 .carousel-fade .carousel-inner .active.left,
@@ -136,6 +137,8 @@ body{
 #section0 .caption-wrapper{
   position:absolute;
   top:40%;
+  padding-left:15px;
+  padding-right:15px;
 }
 #section0 .caption{
   max-width:425px;
@@ -214,6 +217,10 @@ body{
 .section{
   background-repeat:no-repeat;
   background-size:cover;
+  position:relative;
+}
+.fp-responsive .section{
+  min-height:100vh;
 }
 .bottom-caption-section{
   position:absolute;
@@ -317,6 +324,9 @@ body{
   margin-right:auto;
 }
 
+.contact-section{
+  padding-bottom:40px;
+}
 .contact-section .contact-info{
   text-align:right;
 }
@@ -408,6 +418,53 @@ footer{
   text-decoration:underline;
 }
 
+.side-nav{
+  position:absolute;
+  top:60px;
+  left:0px;
+  max-width:230px;
+  background-color:rgba(255,255,255,.7);
+  padding-left:50px;
+  padding-top:10px;
+  padding-right:10px;
+  border-top-right-radius:25px;
+  border-bottom-right-radius:25px;
+}
+.side-nav .media-body>ul{
+  list-style:none;
+  padding-left:0;
+  margin-top:10px;
+  text-align:right;
+}
+.side-nav .media-body>ul>li{
+  line-height:1em;
+}
+.side-nav .media-body>ul>li>a{
+  color:#f56600;
+  font-family:Automate, sans-serif;
+  font-weight:700;
+  font-size:14px;
+  text-transform:uppercase;
+}
+.side-nav .media-body>ul>li.active>a,
+.side-nav .media-body>ul>li>a:hover,
+.side-nav .media-body>ul>li>a:focus{
+  color:#092c74;
+  text-decoration:none;
+}
+
+.fp-responsive #section4{
+  min-height:auto;
+  padding-top:200px;
+}
+.fp-responsive #section4>footer{
+  position:relative;
+}
+.fp-responsive #sectionCarousel.carousel, 
+.fp-responsive #sectionCarousel .carousel-inner, 
+.fp-responsive #sectionCarousel .carousel-inner .item{
+  height:90vh;
+}
 
 @media (max-width:767px){
   .scroller{
@@ -415,6 +472,26 @@ footer{
   }
   .bottom-caption .btn-main{
     margin-top:20px;
+  }
+  .side-nav{
+    display:none;
+  }
+  #section0 .caption-wrapper{
+    top:20%;
+  }
+  .container-fluid>.navbar-header{
+    margin-left:0;
+  }
+  .contact-section .contact-form{
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:40px;
+  }
+  .fp-responsive #section4{
+    padding-top:40px;
+  }
+  .callout-bubble{
+    margin-top:25px;
   }
 }
 @media (min-width:768px){
