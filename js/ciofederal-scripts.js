@@ -4,7 +4,9 @@ jQuery(document).ready(function($){
       responsiveHeight:600,
       verticalCentered:false,
       slideSelector:'.fullpage-slide',
-      //paddingTop:'71px'
+      afterRender: function(){
+        $('#sectionCarousel.carousel').carousel();
+      }
     });
 
     $(document).on('click', '.scroller', function(){
