@@ -253,6 +253,48 @@ body{
 #section2 .bottom-caption{
   max-width:550px;
 }
+.callout-bubble{
+  background-color:#fff;
+  padding:20px;
+  box-shadow:5px 5px 12px #888;
+  border-top-left-radius:35px;
+  border-bottom-left-radius:35px;
+  border-bottom-right-radius:35px;
+}
+.callout-bubble>h4{
+  margin-top:0;
+  margin-bottom:0;
+  font-size:14px;
+  color:#092c74;
+  font-weight:700;
+  text-transform:uppercase;
+}
+.callout-bubble>p{
+  font-weight:400;
+  font-size:14px;
+  letter-spacing:normal;
+  text-transform:none;
+  line-height:1em;
+}
+.inner-video-container{
+  min-height:550px;
+  position:relative;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+.clients-section-footer{
+  position:absolute;
+  bottom:0;
+  padding-top:40px;
+  padding-bottom:40px;
+  text-align:center;
+}
+.bottom-caption-section .client-logos{
+  text-align:center;
+}
+.bottom-caption-section .client-logos li img{
+  max-height:80px;
+}
 
 @media (max-width:767px){
   .scroller{
