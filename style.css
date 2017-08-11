@@ -43,9 +43,6 @@ h1{
   color:#092c74;
   margin-top:0;
 }
-h1.page-title{
-  text-align:center;
-}
 h2{
   font-size:24px;
   font-family:Automate, sans-serif;
@@ -527,11 +524,19 @@ footer{
   box-shadow:inset 0px 23px 10px -20px #666;
 }
 
+.page-title-bar{
+  padding-top:15px;
+  padding-bottom:10px;
+  box-shadow:0px 3px 10px #666;
+  text-align:center;
+}
+.page-title-bar>h1{
+  margin-bottom:0;
+}
+
 #main{
   /*box-shadow:0px 0px 12px #666;*/
   position:relative;
-  padding-top:25px;
-  padding-bottom:25px;
 }
 #main>.page-background{
   position:absolute;
@@ -552,18 +557,55 @@ footer{
 }
 
 #mainContent{
+  padding-top:25px;
+  padding-bottom:25px;
+}
+#mainContent>.container{
   max-width:750px;
-  margin-left:auto;
-  margin-right:auto;
 }
 #mainContent .col-sm-6{
   padding-top:25px;
 }
 
-.page-title-bar{
-  padding-top:15px;
-  padding-bottom:10px;
-  box-shadow:0px 0px 10px #666;
+#clients{
+  padding-top:40px;
+  padding-bottom:40px;
+  box-shadow:inset 0px -23px 10px -20px #666;
+}
+#clients .client-logos .col-sm-9{
+  text-align:left;
+}
+
+.testimonial{
+  margin-top:25px;
+  max-width:80%;
+  clear:both;
+}
+.testimonial:nth-child(odd){
+  float:right;
+  text-align:right;
+}
+.testimonial .author{
+  margin-top:-5px;
+  margin-bottom:0;
+  font-weight:700;
+  color:#092c74;
+  text-transform:uppercase;
+  font-size:14px;
+  line-height:1em;
+}
+.testimonial .author-company{
+  color:#f56600;
+  text-transform:uppercase;
+  font-size:14px;
+}
+#testimonialPagination{
+  float:right;
+  clear:both;
+}
+#testimonialPagination .pagination>li>a{
+  border:none;
+  color:#4d4d4d;
 }
 
 
