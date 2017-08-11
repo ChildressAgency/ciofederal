@@ -614,6 +614,11 @@ footer{
   color:#4d4d4d;
 }
 
+#mainContent .contact-section{
+  margin-top:60px;
+  margin-bottom:100px;
+}
+
 
 @media (max-width:767px){
   .scroller{
