@@ -566,6 +566,12 @@ footer{
 #mainContent .col-sm-6{
   padding-top:25px;
 }
+#mainContent ul{
+  list-style:none;
+}
+#mainContent ul>li{
+  margin-bottom:15px;
+}
 
 #clients{
   padding-top:40px;
