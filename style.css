@@ -347,15 +347,20 @@ img.alignright{
 .bottom-caption-section .client-logos ul{
   margin-bottom:0;
 }
-.bottom-caption-section .client-logos ul.list-inline>li{
+.client-logos ul.list-inline>li{
   padding-left:10px;
   padding-right:10px;
 }
-.bottom-caption-section .client-logos{
+.client-logos{
   text-align:center;
 }
-.bottom-caption-section .client-logos li img{
+.client-logos li img{
   max-height:80px;
+}
+#clients .client-logos{
+  max-width:750px;
+  margin-left:auto;
+  margin-right:auto;
 }
 .clients-section-footer{
   padding-top:20px;
@@ -519,10 +524,11 @@ footer{
 #contact{
   padding-top:80px;
   padding-bottom:40px;
+  box-shadow:inset 0px 23px 10px -20px #666;
 }
 
 #main{
-  box-shadow:0px 0px 12px #666;
+  /*box-shadow:0px 0px 12px #666;*/
   position:relative;
   padding-top:25px;
   padding-bottom:25px;
