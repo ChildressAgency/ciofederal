@@ -35,6 +35,56 @@ body{
   color:#4d4d4d;
 }
 
+h1{
+  font-size:36px;
+  font-family:Automate, sans-serif;
+  font-weight:700;
+  text-transform:uppercase;
+  color:#092c74;
+  margin-top:0;
+}
+h1.page-title{
+  text-align:center;
+}
+h2{
+  font-size:24px;
+  font-family:Automate, sans-serif;
+  font-weight:700;
+  text-transform:uppercase;
+  color:#f56600;
+  margin-top:0;
+}
+h3{
+  font-size:18px;
+  font-family:Automate, sans-serif;
+  font-weight:700;
+  text-transform:uppercase;
+  color:#092c74;
+  margin-top:0;
+}
+
+img.aligncenter,
+img.alignnone{
+  display:block;
+  max-width:100%;
+  height:auto;
+  margin:25px auto;
+}
+img.alignleft{
+  display:block;
+  max-width:100%;
+  height:auto;
+  float:left;
+  margin:25px 25px 25px 0px;
+}
+img.alignright{
+  display:block;
+  max-width:100%;
+  height:auto;
+  float:right;
+  margin:25px 0px 25px 25px;
+}
+
 .btn-main{
   display:inline-block;
   color:#f56600;
@@ -466,6 +516,45 @@ footer{
   height:90vh;
 }
 
+#contact{
+  padding-top:80px;
+  padding-bottom:40px;
+}
+
+#main{
+  box-shadow:0px 0px 12px #666;
+  position:relative;
+  padding-top:25px;
+  padding-bottom:25px;
+}
+#main>.page-background{
+  position:absolute;
+  height:100%;
+  width:100%;
+  top:0;
+  z-index:-1;
+  background-repeat:no-repeat;
+  background-size:auto;
+}
+#main>.page-background-left{
+  background-image:url(images/tech-bg-graphic-left.png);
+  background-position:left bottom;
+}
+#main>.page-background-right{
+  background-image:url(images/tech-bg-graphic-right.png);
+  background-position:right bottom;
+}
+
+#mainContent{
+  max-width:750px;
+  margin-left:auto;
+  margin-right:auto;
+}
+#mainContent .col-sm-6{
+  padding-top:25px;
+}
+
+
 @media (max-width:767px){
   .scroller{
     display:none;
@@ -493,8 +582,14 @@ footer{
   .callout-bubble{
     margin-top:25px;
   }
+  #main>.page-background{
+    opacity:.5;
+  }
 }
 @media (min-width:768px){
+  #section0 .caption-wrapper{
+    margin-left:10%;
+  }
   #section4 .container{
     height:100%;
   }
