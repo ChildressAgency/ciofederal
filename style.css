@@ -560,6 +560,12 @@ footer{
   padding-top:25px;
 }
 
+.page-title-bar{
+  padding-top:15px;
+  padding-bottom:10px;
+  box-shadow:0px 0px 10px #666;
+}
+
 
 @media (max-width:767px){
   .scroller{
