@@ -60,6 +60,15 @@ h3{
   margin-top:0;
 }
 
+a{
+  color:#092c74;
+  font-weight:700;
+}
+a:hover{
+  color:#f56600;
+  text-decoration:underline;
+}
+
 img.aligncenter,
 img.alignnone{
   display:block;
@@ -619,6 +628,56 @@ footer{
   margin-bottom:100px;
 }
 
+.blog-summary{
+  margin-top:25px;
+  border-top-left-radius:25px;
+  border-bottom-left-radius:25px;
+  border-bottom-right-radius:25px;
+  box-shadow:3px 3px 10px #666;
+  background-color:#fff;
+}
+.blog-summary p{
+  font-size:14px;
+  line-height:1.2em;
+}
+.blog-summary-header>h2{
+  font-size:16px;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  color:#092c74;
+  margin-bottom:0;
+}
+.blog-summary-header>h3{
+  font-size:14px;
+  color:#f56600;
+  margin-bottom:0;
+}
+.blog-summary-header>p{
+  font-size:14px;
+  color:#092c74;
+  font-weight:700;
+  font-family:Automate, sans-serif;
+}
+.blog-summary .blog-featured-image{
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center center;
+}
+a.read-more{
+  font-family:Automate, sans-serif;
+  font-size:14px;
+  font-weight:400;
+  color:#f56600;
+  display: block;
+}
+a.read-more:hover{
+  color:#092c74;
+}
+.blog-summary .read-more{
+  margin-top:-5px;
+}
+
 
 @media (max-width:767px){
   .scroller{
@@ -650,6 +709,15 @@ footer{
   #main>.page-background{
     opacity:.5;
   }
+  .blog-summary .col-sm-7{
+    padding:15px 30px;
+  }
+  .blog-summary .blog-featured-image{
+    min-height:130px;
+    margin-top:10px;
+    border-bottom-left-radius:25px;
+    border-bottom-right-radius:25px;
+  }
 }
 @media (min-width:768px){
   #section0 .caption-wrapper{
@@ -666,5 +734,31 @@ footer{
   #section4 .contact-section>.row{
     display:table-cell;
     vertical-align:middle;
+  }
+  .container-sm-height{
+    display: table;
+  }
+  .row-sm-height{
+    display:table-row;
+  }
+  .col-sm-height{
+    display:table-cell;
+    float:none;
+    vertical-align:middle;
+  }
+  .blog-summary .col-sm-7{
+    padding:10px 10px 10px 60px;
+  }
+  .blog-summary .col-sm-5{
+    padding:0;
+  }
+  .blog-summary .blog-featured-image{
+    position: absolute;
+    height: 100%;
+    width:100%;
+    min-height:130px;
+    display:block;
+    top:0;
+    border-bottom-right-radius:25px;
   }
 }
