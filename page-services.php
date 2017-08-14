@@ -33,6 +33,6 @@
       <?php endwhile; endif; ?>
     </div>
   </section>
-  <?php get_template_part('background-graphic.php'); ?>
+  <?php get_template_part('background-graphic'); ?>
 </main>
 <?php get_footer(); ?>

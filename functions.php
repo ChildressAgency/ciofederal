@@ -60,13 +60,15 @@ function ciofederal_scripts(){
 add_action('wp_enqueue_scripts', 'ciofederal_styles');
 function ciofederal_styles(){
   wp_register_style('bootstrap-css', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
-  wp_register_style('fullpage-css', get_template_directory_uri() . '/css/jquery.fullpage.css');
+	wp_register_style('fullpage-css', get_template_directory_uri() . '/css/jquery.fullPage.css');
+	wp_register_style('google-fonts', '//fonts.googleapis.com/css?family=News+Cycle:400,700');
   wp_register_style('ciofederal', get_template_directory_uri() . '/style.css');
   
   wp_enqueue_style('bootstrap-css');
   if(is_front_page()){
     wp_enqueue_style('fullpage-css');
-  }
+	}
+	wp_enqueue_style('google-fonts');
   wp_enqueue_style('ciofederal');
 }
 
@@ -289,3 +291,41 @@ if(function_exists('acf_add_options_page')){
     'redirect' => false
   ));
 }
+
+function ciofederal_fallback_menu(){ ?>
+	<div id="navbar" class="navbar-collapse collapse">
+		<ul class="nav navbar-nav navbar-right">
+			<li<?php if(is_page('about')){ echo ' class="active"'; } ?>><a href="<?php echo home_url('about'); ?>">About</a></li>
+			<li<?php if(is_page('services')){ echo ' class="active"'; } ?>><a href="<?php echo home_url('services'); ?>">Services</a></li>
+			<li<?php if(is_page('clients')){ echo ' class="active"'; } ?>><a href="<?php echo home_url('clients'); ?>">Clients</a></li>
+			<li<?php if(is_page('careers')){ echo ' class="active"'; } ?>><a href="<?php echo home_url('careers'); ?>">Careers</a></li>
+			<li<?php if(is_page('news')){ echo ' class="active"'; } ?>><a href="<?php echo home_url('news'); ?>">News</a></li>
+			<li<?php if(is_page('contact')){ echo ' class="active"'; } ?>><a href="<?php echo home_url('contact'); ?>">Contact</a></li>
+			<li><a href="<?php the_field('linkedin', 'option'); ?>" class="header-social" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+		</ul>
+	</div>
+<?php }
+
+function ciofederal_fallback_footer_menu(){ ?>
+	<nav id="footer-nav">
+		<ul class="nav nav-justified">
+			<li><a href="<?php echo home_url('about'); ?>">About</a></li>
+			<li><a href="<?php echo home_url('services'); ?>">Services</a></li>
+			<li><a href="<?php echo home_url('clients'); ?>">Clients</a></li>
+			<li><a href="<?php echo home_url('careers'); ?>">Careers</a></li>
+			<li><a href="<?php echo home_url('news'); ?>">News</a></li>
+			<li><a href="<?php echo home_url('contact'); ?>">Contact</a></li>
+		</ul>
+	</nav>
+<?php }
+
+function ciofederal_sidenav_fallback_menu(){ ?>
+	<ul>
+		<li><a href="<?php echo home_url('about'); ?>">About</a></li>
+		<li><a href="<?php echo home_url('services'); ?>">Services</a></li>
+		<li><a href="<?php echo home_url('clients'); ?>">Clients</a></li>
+		<li><a href="<?php echo home_url('careers'); ?>">Careers</a></li>
+		<li><a href="<?php echo home_url('news'); ?>">News</a></li>
+		<li><a href="<?php echo home_url('contact'); ?>">Contact</a></li>
+	</ul>
+<?php }

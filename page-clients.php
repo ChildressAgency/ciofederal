@@ -61,16 +61,18 @@
           <nav id="testimonialPagination" aria-label="Page navigation">
             <?php 
               echo paginate_links(array(
-                'base' => get_permalink() . '%#%' . '/';
+                'base' => get_permalink() . '%#%' . '/',
                 'format' => '?page=%#%',
                 'current' => $page,
                 'total' => $pages,
+                'prev_text' => '&lt;',
+                'next_text' => '&gt;'
               ));
             ?>
           </nav>
         </div>
       </section>
   <?php endif; ?>
-  <?php get_template_part('background-graphic.php'); ?>
+  <?php get_template_part('background-graphichp'); ?>
 </main>
 <?php get_footer(); ?>

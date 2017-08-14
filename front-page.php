@@ -18,30 +18,16 @@
             'menu' => '',
             'container' => 'div',
             'container_class' => 'navbar-collapse collapse',
-            'container_id' => 'navbar'>
+            'container_id' => 'navbar',
             'menu_class' => 'nav navbar-nav navbar-right',
             'menu_id' => '',
             'echo' => true,
             'fallback_cb' => 'ciofederal_fallback_menu',
-            'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s<li><a href="' . the_field('linkedin', 'option') . '" class="header-social" target="_blank"><i class="fa fa-linkedin"></i></a></li></ul>',
+            'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s<li><a href="' . get_field('linkedin', 'option') . '" class="header-social" target="_blank"><i class="fa fa-linkedin"></i></a></li></ul>',
             'depth' => 2,
             'walker' => new wp_bootstrap_navwalker()
           );
-          wp_nav_menu($nav_defaults);
-
-          function ciofederal_fallback_menu(){ ?>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav navbar-right">
-                <li<?php if(is_page('about')){ echo ' class="active"'; } ?>><a href="<?php echo home_url('about'); ?>">About</a></li>
-                <li<?php if(is_page('services')){ echo ' class="active"'; } ?>><a href="<?php echo home_url('services'); ?>">Services</a></li>
-                <li<?php if(is_page('clients')){ echo ' class="active"'; } ?>><a href="<?php echo home_url('clients'); ?>">Clients</a></li>
-                <li<?php if(is_page('careers')){ echo ' class="active"'; } ?>><a href="<?php echo home_url('careers'); ?>">Careers</a></li>
-                <li<?php if(is_page('news')){ echo ' class="active"'; } ?>><a href="<?php echo home_url('news'); ?>">News</a></li>
-                <li<?php if(is_page('contact')){ echo ' class="active"'; } ?>><a href="<?php echo home_url('contact'); ?>">Contact</a></li>
-                <li><a href="<?php the_field('linkedin', 'option'); ?>" class="header-social" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-              </ul>
-            </div>
-        <?php } ?>
+          wp_nav_menu($nav_defaults); ?>
       </div>
     </nav>
     <div id="sectionCarousel" class="carousel slide carousel-fade">
@@ -106,7 +92,7 @@
         </div>
       </div>
     </div>
-    <?php get_template_part('side-nav.php'); ?>
+    <?php get_template_part('side-nav'); ?>
     <div class="page-background page-background-left"></div>
   </section>
   <section class="section fp-auto-height-responsive" id="section2" style="background-image:url(<?php echo get_stylesheet_directory_uri(); ?>/images/people-discussing-image-gears.jpg);">
@@ -125,16 +111,16 @@
                 <h4>NAICS Codes:</h4>
                 <p><?php the_field('naics_codes'); ?></p>
                 <h4>Memberships:</h4>
-                <?php the_field('memberships'); ?>
+                <p><?php the_field('memberships'); ?></p>
                 <h4>Contract Vehicles:</h4>
-                <?php the_field('contract_vehicles'); ?>
+                <p><?php the_field('contract_vehicles'); ?></p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <?php get_template_part('side-nav.php'); ?>
+    <?php get_template_part('side-nav'); ?>
   </section>
   <section class="section fp-auto-height-responsive" id="section3" style="background-image:url(<?php echo get_stylesheet_directory_uri(); ?>/images/ones-zeros-on-screen.jpg);">
     <video id="section3Video" loop muted controls="false" data-autoplay>
@@ -165,10 +151,10 @@
         </div>
       </div>
     </div>
-    <?php get_template_part('side-nav.php'); ?>
+    <?php get_template_part('side-nav'); ?>
   </section>
   <section class="section fp-auto-height-responsive" id="section4">
-    <?php get_template_part('contact-form.php'); ?>
+    <?php get_template_part('contact-form'); ?>
     <footer>
       <div class="container">
         <div class="row">
@@ -191,20 +177,7 @@
               'depth' => 2,
               'walker' => new wp_bootstrap_navwalker()
             );
-            wp_nav_menu($footer_nav_defaults);
-
-            function ciofederal_fallback_footer_menu(){ ?>
-              <nav id="footer-nav">
-                <ul class="nav nav-justified">
-                  <li><a href="<?php echo home_url('about'); ?>">About</a></li>
-                  <li><a href="<?php echo home_url('services'); ?>">Services</a></li>
-                  <li><a href="<?php echo home_url('clients'); ?>">Clients</a></li>
-                  <li><a href="<?php echo home_url('careers'); ?>">Careers</a></li>
-                  <li><a href="<?php echo home_url('news'); ?>">News</a></li>
-                  <li><a href="<?php echo home_url('contact'); ?>">Contact</a></li>
-                </ul>
-              </nav>
-          <?php } ?>
+            wp_nav_menu($footer_nav_defaults); ?>
         </div>
           <div class="col-sm-2">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/sba-logo-white.png" class="img-responsive cert-logo" alt="U.S. Small Business Administration Logo" />
@@ -217,7 +190,7 @@
         </div>
       </div>
     </footer>
-    <?php get_template_part('side-nav.php'); ?>
+    <?php get_template_part('side-nav'); ?>
   </section>
 </main>
 <?php get_footer(); ?>

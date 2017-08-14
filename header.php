@@ -43,25 +43,11 @@
             'menu_id' => '',
             'echo' => true,
             'fallback_cb' => 'ciofederal_fallback_menu',
-            'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s<li><a href="' . the_field('linkedin', 'option') . '" class="header-social" target="_blank"><i class="fa fa-linkedin"></i></a></li></ul>',
+            'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s<li><a href="' . get_field('linkedin', 'option') . '" class="header-social" target="_blank"><i class="fa fa-linkedin"></i></a></li></ul>',
             'depth' => 2,
             'walker' => new wp_bootstrap_navwalker()
           );
-          wp_nav_menu($nav_defaults);
-
-          function ciofederal_fallback_menu(){ ?>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav navbar-right">
-                <li<?php if(is_page('about')){ echo ' class="active"'; } ?>><a href="<?php echo home_url('about'); ?>">About</a></li>
-                <li<?php if(is_page('services')){ echo 'class="active"'; } ?>><a href="<?php echo home_url('services'); ?>">Services</a></li>
-                <li<?php if(is_page('clients')){ echo ' class="active"'; } ?>><a href="<?php echo home_url('clients'); ?>">Clients</a></li>
-                <li<?php if(is_page('careers')){ echo ' class="active"'; } ?>><a href="<?php echo home_url('careers'); ?>">Careers</a></li>
-                <li<?php if(is_page('news')){ echo ' class="active"'; } ?>><a href="<?php echo home_url('news'); ?>">News</a></li>
-                <li<?php if(is_page('contact')){ echo ' class="active"'; } ?>><a href="<?php echo home_url('contact'); ?>">Contact</a></li>
-                <li><a href="<?php the_field('linkedin', 'option'); ?>" class="header-social" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-              </ul>
-            </div>
-        <?php } ?>
+          wp_nav_menu($nav_defaults); ?>
       </div>
     </nav>
   <?php endif; ?>  

@@ -1,7 +1,9 @@
-<?php if(!is_front_page() && !is_page('contact')): ?>
-  <section id="contact">
-    <?php get_template_part('contact-form.php'); ?>
-  </section>
+<?php if(!is_front_page()): ?>
+  <?php if(!is_page('contact')): ?>
+    <section id="contact">
+      <?php get_template_part('contact-form'); ?>
+    </section>
+  <?php endif; ?>
   <footer>
     <div class="container">
       <div class="row">
@@ -24,20 +26,7 @@
               'depth' => 2,
               'walker' => new wp_bootstrap_navwalker()
             );
-            wp_nav_menu($footer_nav_defaults);
-
-            function ciofederal_fallback_footer_menu(){ ?>
-              <nav id="footer-nav">
-                <ul class="nav nav-justified">
-                  <li><a href="<?php echo home_url('about'); ?>">About</a></li>
-                  <li><a href="<?php echo home_url('services'); ?>">Services</a></li>
-                  <li><a href="<?php echo home_url('clients'); ?>">Clients</a></li>
-                  <li><a href="<?php echo home_url('careers'); ?>">Careers</a></li>
-                  <li><a href="<?php echo home_url('news'); ?>">News</a></li>
-                  <li><a href="<?php echo home_url('contact'); ?>">Contact</a></li>
-                </ul>
-              </nav>
-          <?php } ?>
+            wp_nav_menu($footer_nav_defaults); ?>
         </div>
         <div class="col-sm-2">
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/sba-logo-white.png" class="img-responsive cert-logo" alt="U.S. Small Business Administration Logo" />

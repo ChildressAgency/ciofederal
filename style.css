@@ -201,7 +201,7 @@ img.alignright{
 }
 #section0 .caption h2{
   margin-top:10px;
-  font-size:23px;
+  font-size:19px;
   color:#092c74;
   text-transform:uppercase;
   letter-spacing:4px;
@@ -627,9 +627,15 @@ footer{
   float:right;
   clear:both;
 }
-#testimonialPagination .pagination>li>a{
+#testimonialPagination .page-numbers{
   border:none;
   color:#4d4d4d;
+  padding:10px;
+}
+#testimonialPagination .page-numbers:hover,
+#testimonialPagination .page-numbers.current{
+  color:#f56600;
+  text-decoration:none;
 }
 
 #mainContent .contact-section{
@@ -759,6 +765,10 @@ http://wordpress.org/extend/plugins/wp-pagenavi/
 }
 #mainContent .service .media .media-body ul{
   list-style:disc;
+}
+
+.linkedin-frame{
+  margin-top:60px;
 }
 
 
