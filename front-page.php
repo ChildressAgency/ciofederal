@@ -61,7 +61,12 @@
                 <div id="caption<?php echo $c; ?>" class="caption-content collapse" aria-expanded="false">
                   <div class="media">
                     <div class="media-left media-middle">
-                      <img src="<?php the_sub_field('service_icon'); ?>" class="media-object" alt="" />
+                      <?php
+                        $service_icon = get_stylesheet_directory_uri() . '/images/clipboard-icon.png';
+                        if(get_sub_field('service_icon')){
+                          $service_icon = get_sub_field('service_icon');
+                        } ?>
+                      <img src="<?php echo $service_icon; ?>" class="media-object" alt="" />
                     </div>
                     <div class="media-body">
                       <h1 class="media-header"><?php the_sub_field('service_title'); ?></h1>
@@ -154,7 +159,7 @@
         <div class="container">
           <div class="clients-section-footer-content">
             <h1>Clients</h1>
-            <?php the_field('clients_text'); ?>
+            <p><?php the_field('clients_text'); ?></p>
             <a href="<?php echo home_url('clients'); ?>" class="btn-main">Read More</a>
           </div>
         </div>

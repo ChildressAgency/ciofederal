@@ -16,7 +16,7 @@
                 <?php endif; ?>
                 <p><?php echo get_the_date('m/d/y'); ?></p>
               </div>
-              <?php the_excerpt(); ?>
+              <?php the_field('post_excerpt'); ?>
               <a href="<?php the_permalink(); ?>" class="read-more">READ MORE ></a>
             </div>
             <div class="col-sm-5 col-sm-height">
