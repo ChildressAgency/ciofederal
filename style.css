@@ -235,13 +235,17 @@ img.alignright{
   box-shadow:2px 3px 10px #aaa;
   padding:10px 30px;
 }
-#captionBoxes .caption-content .media-body h1.media-header{
+#captionBoxes .caption-content .media-body h1.media-header,
+.service .media h1.media-header{
   font-family:Automate, sans-serif;
   font-weight:700;
   color:#f56600;
   margin-top:10px;
   font-size:16px;
   text-transform:uppercase;
+}
+.service .media h1.media-header{
+  font-size:24px;
 }
 #captionBoxes .caption-content .media-body p{
   font-size:14px;
@@ -748,6 +752,13 @@ http://wordpress.org/extend/plugins/wp-pagenavi/
   background-size: contain;
   object-fit: cover;
   z-index: 0;
+}
+
+#mainContent .service{
+  margin-top:40px;
+}
+#mainContent .service .media .media-body ul{
+  list-style:disc;
 }
 
 
