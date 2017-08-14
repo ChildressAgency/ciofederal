@@ -219,7 +219,7 @@ img.alignright{
   border-bottom-right-radius:14px;
   -webkit-transition:all .3s ease;
   transition:all .3s ease;
-  display:inline-block;
+  display:inline;
 }
 .btn-bottom-tab+.btn-bottom-tab{
   margin-left:10px;
