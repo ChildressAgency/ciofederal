@@ -71,7 +71,6 @@
           </div>
         </div>
       </div>
-    <span class="scroller"><i class="fa fa-angle-down"></i></span>
   </section>
   <section class="section fp-auto-height-responsive" id="section1" style="background-image:url(<?php echo get_stylesheet_directory_uri(); ?>/images/keyboard-gears.jpg);">
     <video id="section1Video" loop muted controls="false" data-autoplay>

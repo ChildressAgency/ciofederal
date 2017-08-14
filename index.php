@@ -34,7 +34,7 @@
               <?php if(get_field('subtitle')): ?>
                 <h3><?php the_field('subtitle'); ?></h3>
               <?php endif; ?>
-              <?php echo get_the_date(); ?>
+              <p><?php echo get_the_date(); ?></p>
             </div>
             <?php the_excerpt(); ?>
             <a href="<?php the_permalink(); ?>" class="read-more">READ MORE ></a>

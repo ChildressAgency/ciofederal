@@ -647,7 +647,8 @@ footer{
   margin-bottom:100px;
 }
 
-.blog-summary{
+.blog-summary,
+.entry-summary{
   margin-top:25px;
   border-top-left-radius:25px;
   border-bottom-left-radius:25px;
@@ -655,7 +656,8 @@ footer{
   box-shadow:3px 3px 10px #666;
   background-color:#fff;
 }
-.blog-summary p{
+.blog-summary p,
+.entry-summary p{
   font-size:14px;
   line-height:1.2em;
 }
@@ -683,6 +685,12 @@ footer{
   background-size:cover;
   background-position:center center;
 }
+
+.entry-summary{
+  padding:15px 40px;
+  margin-top:40px;
+}
+
 a.read-more{
   font-family:Automate, sans-serif;
   font-size:14px;

@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <main id="main">
   <div class="page-title-bar">
-    <h1>In the news</h1>
+    <h1>Blog</h1>
   </div>
   <section id="mainContent">
     <div class="container">
