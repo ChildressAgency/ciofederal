@@ -73,6 +73,6 @@
         </div>
       </section>
   <?php endif; ?>
-  <?php get_template_part('background-graphichp'); ?>
+  <?php get_template_part('background-graphic'); ?>
 </main>
 <?php get_footer(); ?>
