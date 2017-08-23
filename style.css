@@ -205,9 +205,10 @@ img.alignright{
   color:#092c74;
   text-transform:uppercase;
   letter-spacing:4px;
+  text-align:center;
 }
 .caption-tabs{
-  text-align:right;
+  text-align:center;
 }
 .btn-bottom-tab{
   background-color:#f56600;
