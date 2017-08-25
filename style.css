@@ -192,7 +192,7 @@ img.alignright{
 
 #section0 .caption-wrapper{
   position:absolute;
-  top:40%;
+  top:20%;
   padding-left:15px;
   padding-right:15px;
 }
@@ -220,7 +220,7 @@ img.alignright{
   border-bottom-right-radius:14px;
   -webkit-transition:all .3s ease;
   transition:all .3s ease;
-  display:inline;
+  display:inline-block;
 }
 .btn-bottom-tab+.btn-bottom-tab{
   margin-left:10px;
@@ -235,6 +235,9 @@ img.alignright{
   background-color:#fff;
   box-shadow:2px 3px 10px #aaa;
   padding:10px 30px;
+}
+#captionBoxes #captions{
+  margin-bottom:-2px;
 }
 #captionBoxes .caption-content .media-body h1.media-header,
 .service .media h1.media-header{

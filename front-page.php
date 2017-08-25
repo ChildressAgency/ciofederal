@@ -5,6 +5,7 @@
       <div class="container-fluid">
         <div class="navbar-header">
           <a href="<?php echo home_url(); ?>" class="header-logo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-icon-white.png" class="img-responsive" alt="CIO Federal IT Icon Logo" /></a>
+          <a href="<?php echo home_url(); ?>" class="header-logo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/sba-8a-header-logo.png" class="img-responsive" alt="SBA 8a Certified Logo" /></a>
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="expanded" aria-controls="navbar">
             <span class="sr-only">Toggle Navigation</span>
             <span class="icon-bar"></span>
@@ -72,7 +73,7 @@
         </div>
       </div>
   </section>
-  <section class="section fp-auto-height-responsive" id="section1" style="background-image:url(<?php echo get_stylesheet_directory_uri(); ?>/images/keyboard-gears.jpg);">
+  <section class="section fp-auto-height-responsive" id="section1" style="background-image:url(<?php echo get_stylesheet_directory_uri(); ?>/images/keyboard-gears.jpg); overflow:hidden;">
     <video id="section1Video" loop muted controls="false" data-autoplay>
       <source src="<?php echo get_stylesheet_directory_uri(); ?>/images/white-keyboard.mp4" type="video/mp4" />
       <source src="<?php echo get_stylesheet_directory_uri(); ?>/images/white-keyboard.webm" type="video/webm" />
@@ -121,7 +122,7 @@
     </div>
     <?php get_template_part('side-nav'); ?>
   </section>
-  <section class="section fp-auto-height-responsive" id="section3" style="background-image:url(<?php echo get_stylesheet_directory_uri(); ?>/images/ones-zeros-on-screen.jpg);">
+  <section class="section fp-auto-height-responsive" id="section3" style="background-image:url(<?php echo get_stylesheet_directory_uri(); ?>/images/ones-zeros-on-screen.jpg); overflow:hidden;">
     <video id="section3Video" loop muted controls="false" data-autoplay>
       <source src="<?php echo get_stylesheet_directory_uri(); ?>/images/binary_screen_white.mp4" type="video/mp4" />
       <source src="<?php echo get_stylesheet_directory_uri(); ?>/images/binary_screen_white.webm" type="video/webm" />
