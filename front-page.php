@@ -181,7 +181,7 @@
         </div>
           <div class="col-sm-2">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/sba-logo-white.png" class="img-responsive cert-logo" alt="U.S. Small Business Administration Logo" />
-            <a href="<?php the_field('linkedin'); ?>" class="footer-social"><i class="fa fa-linkedin"></i></a>
+            <a href="<?php the_field('linkedin', 'option'); ?>" class="footer-social"><i class="fa fa-linkedin"></i></a>
           </div>
         </div>
         <div class="copyright">
